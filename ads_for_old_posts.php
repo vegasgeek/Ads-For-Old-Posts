@@ -57,10 +57,10 @@ function build_afop_block( ) {
 		
 		// deal with margin
 		if ($options['afop_margin'] != 'none' ) {
-			if ( $do_margin == 'all' ) {
+			if ( $options['afop_margin_amount'] == 'all' ) {
 				$show_margin = 'margin: ' . esc_attr( $options['afop_margin_amount'] ) . 'px;';
 			} else {
-				$show_margin = 'margin-' . $do_margin . ': ' . esc_attr( $options['afop_margin_amount'] ) . 'px;';
+				$show_margin = 'margin-' . esc_attr( $options['afop_margin_amount'] ) . ': ' . esc_attr( $options['afop_margin_amount'] ) . 'px;';
 			}
 		} else {
 			$show_margin = '';
